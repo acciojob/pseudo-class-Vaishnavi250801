@@ -1,1 +1,27 @@
-/*  your css code here. If applicable */
+/* Main container styling */
+#container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+/* Pseudo-element for content before the container */
+#container::before {
+    content: "Special Text Before ";
+    color: #f00;
+    font-size: 20px;
+    display: inline;
+}
+
+/* Pseudo-element for content after the container */
+#container::after {
+    content: " Special Text After";
+    color: #f00;
+    font-size: 20px;
+    display: inline;
+}
